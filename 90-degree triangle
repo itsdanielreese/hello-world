@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    for (int x = 0; x < 10; ++x){           //The Function that controls the stars placement
+        
+        for (int y = 10; y > x; --y)        // The function that controls the spaces
+            cout << " ";
+            
+            for (int z = 0; z < x; ++z)     //This function controls the stars appearance
+                cout << "*";
+                cout << endl;
+    }
+}
+
+//===========================================[NOTES]================================================================================
+
+ /*   for (int a = 10; a > 0; --a){
+        
+        for (int b = 10; b > a; --b)
+        cout << " ";
+        
+            for (int c = 0; c < a*2 - 1; ++c)
+                cout << "*";
+                cout << endl;
+    }*/
+
+          *
+         **
+        ***
+       ****
+      *****
+     ******
+    *******
+   ********
+  *********
+ **********
