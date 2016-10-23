@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+int main() {
+    
+    for (int x = 0; x < 10; ++x){                   //This function is the base of alignment
+        
+        for (int y = 10; y > x; --y)                // Function that controls the spaces
+            cout << " ";
+            
+            for (int z = 0; z < x*2 - 1; ++z)    /*Function that contols the star appearance; when multiplied by 2, the value doubles
+                                                    and subracting 1 makes it an odd number to give the triangle a more balanced look*/
+                cout << "*";
+                cout << endl;
+    }
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+    cout << "Made by Daniel Ocampo";
+    return 0;
+}
