@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int stars;                                      //Value of stars inputted by the user
+//---------------------------------------------------------[First I/O]-----------------------------------------------------------
+
+    cout << "Please enter a number: ";              //Output
+    cin >> stars;                                   //Input
+    
+    
+//----------------------------------------------------[First Diamond Structure]-----------------------------------------------------------
+//----------------------------------------------------[Top Half of The Diamond]---------------------------------------------------------------- 
+ 
+    for (int x = 0; x < stars; ++x){                //This function is the base of alignment
+        
+        for (int y = stars; y > x; --y)             //This function controls the space alignment
+            cout << " ";
+            
+            for (int z = 0; z < x*2 - 1; ++z)       //Controls the alignment of asterisks and lines up with the x-integers
+                cout << "1";                        //Multiplying the a-integer by 2 creates the opposite half of the triangle
+                cout << endl;                       //Subtracting one keeps the asterisks at an odd number to make the lower half balanced
+    }
+//---------------------------------------------[Bottom Half of the Diamond Structure]-------------------------------------------------------------  
+
+    for (int a = stars; a > 0; --a){                //This function is the base of alignment 
+        
+        for (int b = stars; b > a; --b)             //This function controls the space alignment for the lower half of the diamond
+        cout << " ";
+        
+            for (int c = 0; c < a*2 - 1; ++c)       //This function controls the alignment of asterisks and lines up with the a-integer
+                cout << "2";                        //Multiplying the a-integer by 2 creates the opposite half of the triangle
+                cout << endl;                       //Subtracting one keeps the asterisks at an odd number to make the lower half balanced
+    }
+    
+//---------------------------------------------------[Second Diamond with Asterisks]--------------------------------------------------------
+//-------------------------------------------------[First Half of the Diamond Structure]-----------------------------------------------
+
+    cout << "Enter a number for asterisk version: ";              //Output
+    cin >> stars;
+    
+    for (int x = 0; x < stars; ++x){                //This function is the base of alignment
+        
+        for (int y = stars; y > x; --y)             //This function controls the space alignment
+            cout << " ";
+            
+            for (int z = 0; z < x*2 - 1; ++z)       //Controls the alignment of asterisks and lines up with the x-integers
+                cout << "*";                        //Multiplying the a-integer by 2 creates the opposite half of the triangle
+                cout << endl;                       //Subtracting one keeps the asterisks at an odd number to make the lower half balanced
+    }
+//-------------------------------------------------[Second half of the Diamond Structure]----------------------------------------------
+
+    for (int a = stars; a > 0; --a){                //This function is the base of alignment 
+        
+        for (int b = stars; b > a; --b)             //This function controls the space alignment for the lower half of the diamond
+        cout << " ";
+        
+            for (int c = 0; c < a*2 - 1; ++c)       //This function controls the alignment of asterisks and lines up with the a-integer
+                cout << "*";                        //Multiplying the a-integer by 2 creates the opposite half of the triangle
+                cout << endl;                       //Subtracting one keeps the asterisks at an odd number to make the lower half balanced
+    }
+//-----------------------------------------------------------------------------------------------------------------------------------
+
+    cout << "Made by Daniel Ocampo" << endl;
+    return 0;
+}
+    
